@@ -9,23 +9,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="E.png">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <style>
         .logo_tag {
             margin: 0px 189.6px;
-            padding: 32px 15px;
+            padding: 32px 12px;
         }
 
         .logo_text {
-            margin: 0px 883px 0px 0px;
-            padding: 0px 15px 0px 0px;
+            margin: 0px 800px 0px 0px;
+            padding: 0px 12px 0px 0px;
             font-family: "Mulish", sans-serif;
             font-weight: 750;
             font-size: 24px;
-            color: #f79944;
+            color: #0000FF;
             white-space: nowrap;
+        }
+
+        .nav_items{
+            font-family: "Merienda", cursive;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 16px;
+            color: #0000ff;
+            width:20%;
+            white-space: nowrap;
+        }
+
+        .about_solar{
+            font-family: "Merienda", cursive;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 20px;
+            color: #0000ff;
         }
 
         .cent {
@@ -36,11 +55,13 @@
 
         .logo-img {
             height: 50px;
-            padding: 0px 15px 0px 0px;
+            padding: 0px 12px 0px 0px;
         }
 
         .intro {
             background-color: #F7F9FB;
+            padding-top:7%;
+            padding-bottom: 3%;
         }
         .title{
             margin-top: 92px;
@@ -52,7 +73,7 @@
             font-weight: 598;
             font-style: normal;
             font-size: 36px;
-            color: #f79944;
+            color: #0000FF;
         }
         .desc{
             margin-top: 30px;
@@ -66,20 +87,25 @@
             line-height: 1.8;
         }
         .butn{
-            background-color: #f79944;
-            border-color: #f79944;
+            background-color: #0000FF;
+            border-color: #0000FF;
         }
         .butn:hover {
-            background-color: #e68933;
+            background-color: #125798;
         }
 
         .about{
+            background-color: #D9D9D9;
+            padding: 50px 0px;
+        }
+        .about1{
             padding: 50px 0px;
         }
         .first{
             background-color: #F7F9FB;
-            padding: 15px 25px;
-            margin-bottom: 15px;
+            padding: 12px 25px;
+            margin-bottom: 12px;
+            border-left:3px solid #0000FF;
         }
         .heading{
             font-family: "Merienda", cursive;
@@ -87,31 +113,33 @@
             font-weight: 598;
             font-style: normal;
             font-size: 24px;
-            color: #f79944;
+            color: #0000ff;
         }
         .second{
-            padding: 15px 25px;
-            margin-bottom: 15px;
+            padding: 12px 25px;
+            margin-bottom: 12px;
+            border-left:3px solid #7e770b;
         }
         .third{
-            padding: 15px 25px;
+            padding: 12px 25px;
+            border-left:3px solid #ac601f;
         }
         .heading2{
             font-family: "Merienda", cursive;
             font-optical-sizing: auto;
             font-weight: 598;
             font-style: normal;
-            font-size: 36px;
-            color: #f79944;
-            border-left:5px solid #f79944;
-            padding: 0px 15px;
+            font-size: 32px;
+            color: #0000ff;
+            border-left:5px solid #0000ff;
+            padding: 0px 12px;
             
         }
         .x{
             margin-top: 190px;
         }
         .contact{
-            background-color: #F7F9FB;
+            background-color: #D9D9D9;
             padding: 20px 160px;
             margin-top: 0px;
         }
@@ -127,11 +155,22 @@
 </head>
 
 <body>
-    <nav class="white z-depth-5" style="height: 114px;">
+    <nav class="white" style="height: 10%;position:fixed;opacity:0.4;z-index:2;">
         <div class="nav-wrapper logo_tag cent">
             <a href="#" class="cent">
                 <img src="E.png" class="logo-img">
                 <h4 class=" logo_text">EquiSun One</h4>
+            </a>
+
+            <a href="#about" class="cent nav_items" style="margin-right:20px">
+                <span class="">About</span>
+            </a>
+
+            <a href="#about_solar" class=" cent nav_items" style="margin-right:20px">
+                <span class="">Why Solar</span>
+            </a>
+            <a href="#contact" class=" cent nav_items" style="margin-right:20px">
+                <span class="">Contact</span>
             </a>
         </div>
     </nav>
@@ -150,12 +189,13 @@
                 </div>
                 <a href="https://portal.equisun.one" target="_blank" class="waves-effect waves-light btn butn col s4" style="padding: 0px 10px;">Start Investing</a>
             </div>
-            <div class="col s5 offset-s1">
+            <div class="col s5">
                 <img src="https://cdn.pixabay.com/photo/2024/02/24/10/48/solar-panels-8593759_1280.png" alt="" height="400px" style="margin:20px 0px 0px; padding: 0px 15px;" >
             </div>
         </div>
     </div>
-    <div class="row about">
+    <div class="row about" id="about">
+        <h3 class="center text" style="padding-bottom:3%;">Why Invest With us</h3>
         <div class="col s5 offset-s1">
             <div class="first">
                 <h4 class="heading">Get Returns</h4>
@@ -180,9 +220,29 @@
         </div>
     </div>
 
-    <div class="contact">
-        <h4 class="heading">Get in Touch at Any Time - </h4>
-        <p class="para1" style="margin-top: 30px;">Do not hesitate to contact us with any queries.</p>
+    <div class="row about1" id="about_solar">
+        <h3 class="center text"><u>Why Solar</u></h3>
+        <div class="col s5 offset-s1">
+            <p class="about_solar">Solar energy is a powerful and renewable energy source derived from the Sun, which has the potential to meet the world's energy needs sustainably
+                 <br>
+                 <br>
+                 Overall, transitioning to solar energy not only supports environmental sustainability but also offers economic and social benefits, making it a crucial component of a sustainable energy future
+                
+                </p>
+        </div>
+        <div class="col s4 offset-s1">
+            <h4 class="heading2">Global Solar Installations</h4>
+            <div>
+                <a href="https://plotly.com/~equisunone/1/?share_key=Hc6GExzmyvwBtR25imIMcP" target="_blank" title="Plot 1" style="display: block; text-align: center;"><img src="https://plotly.com/~equisunone/1.png?share_key=Hc6GExzmyvwBtR25imIMcP" alt="Plot 1" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+                <script data-plotly="equisunone:1" sharekey-plotly="Hc6GExzmyvwBtR25imIMcP" src="https://plotly.com/embed.js" async></script>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h4 class="heading center">Contact Us</h4>
+        <p class="para1 center" style="margin-top: 30px;">Contact us using the details given below. Timings Mon - Fri 9 AM - 5 PM IST</p>
         <br>
            <div class="row">
             <hr class="s10 offset-s1">
@@ -190,10 +250,11 @@
                 <div class="col s4">
                     <p class="para2">Delhi</p>
                     <p class="para2">India - 110001</p>
-                    <p class="para2">Phone : +91 8627888554</p>
+                    
                 </div>
                 <div class="col s4">
                     <p class="para2">Phone : +91 9610297656</p>
+                    <p class="para2">Alternate Phone : +91 8627888554</p>
                 </div>
                 <div class="col s4">
                     <p class="para2">Email : contact@equisun.one</p>
